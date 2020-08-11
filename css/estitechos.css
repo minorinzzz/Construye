@@ -644,15 +644,10 @@ footer .container .der {
 }
 @media (max-width: 480px) {
   footer .container .der {
-    flex-direction: row;
-    justify-content: flex-start;
+     flex-direction: column;
   }
 }
-@media (max-width: 320px) {
-  footer .container .der {
-    flex-direction: column;
-  }
-}
+
 footer .container .der .enlaces {
   text-decoration: none;
   display: flex;
@@ -674,21 +669,12 @@ footer .container .der .enlaces p {
 }
 @media (max-width: 480px) {
   footer .container .der .enlaces {
-    width: 50%;
+    width: 90%;
+    margin-left: 30px;
     padding-top: 10px;
   }
 }
-@media (max-width: 375px) {
-  footer .container .der .enlaces {
-    width: 40%;
-  }
-}
-@media (max-width: 320px) {
-  footer .container .der .enlaces {
-    width: 90%;
-    margin-left: 30px;
-  }
-}
+
 footer .ultimo {
   text-align: center;
   color: #FFFFFF;
