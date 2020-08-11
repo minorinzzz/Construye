@@ -610,14 +610,10 @@ footer {
 }
 @media (max-width: 480px) {
   footer {
-    height: 20vh;
-  }
-}
-@media (max-width: 320px) {
-  footer {
     height: min-content;
   }
 }
+
 footer .container {
   width: 80%;
   display: flex;
@@ -629,6 +625,7 @@ footer .container {
 @media (max-width: 480px) {
   footer .container {
     flex-direction: column;
+     margin-bottom: 12px;
   }
 }
 @media (max-width: 375px) {
@@ -636,11 +633,7 @@ footer .container {
     width: 88%;
   }
 }
-@media (max-width: 320px) {
-  footer .container {
-    margin-bottom: 15px;
-  }
-}
+
 footer .container .der {
   display: flex;
   flex-direction: column;
