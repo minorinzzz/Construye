@@ -1,0 +1,458 @@
+@import 'funciones';
+@import 'variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: $botonrojo;
+    .plomo {
+        width: 100%;
+        height: 75px;
+        padding: 10px;
+        background-color: rgba($color: #111111, $alpha: .6);
+        display: flex;
+        align-items: center;
+        //aqui
+        //aqui
+        //aqui
+        @include telefono() {
+            flex-direction: column;
+            padding: 0;
+            padding-left: 15px;
+            padding: 0;
+        }
+        //aqui
+        //aqui
+        //aqui
+        .icon {
+            width: 40%;
+            //aqui
+            //aqui
+            //aqui
+            @include tablet() {
+                width: 35%;
+            }
+            @include telefono() {
+                margin-left: 20px;
+                width: 90%;
+                display: flex;
+                justify-content: space-around;
+                .hamburguesa {
+                    width: 18%;
+                    height: 60px;
+                    background-color: $colorpo;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    border: 2px solid $bajoo;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .barrita {
+                        background-color: $bajoo;
+                        width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 8px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            //aqui
+            //aqui
+            //aqui
+            .enlaces {
+                transform: skew(160deg);
+                background-color: #000000;
+                width: 70%;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                margin-left: -25px;
+                animation: derr 1.3s ease;
+                //aqui
+                //aqui
+                //aqui
+                @include gran() {
+                    width: 30%;
+                }
+                @include computadora() {
+                    width: 90%;
+                }
+                @include telefono() {
+                    width: 75%;
+                    margin-left: -100px;
+                    padding-left: 20px;
+                }
+                @include telepeque() {
+                    width: 93%;
+                    padding-left: 40px;
+                }
+                //aqui
+                //aqui
+                //aqui
+                img {
+                    transform: skew(20deg);
+                    margin-right: 5px;
+                    height: 55px;
+                    margin-left: 25px;
+                }
+                p {
+                    transform: skew(20deg);
+                    color: $colorletra;
+                    font-size: 2rem;
+                }
+            }
+            @keyframes derr {
+                0% {
+                    transform: translateX(-300px);
+                }
+                100% {
+                    transform: translateX(0px);
+                }
+            }
+        }
+        .nave {
+            flex-grow: 2;
+            //aqui
+            //aqui
+            //aqui
+            @include telefono() {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                z-index: 10;
+            }
+            //aqui
+            //aqui
+            //aqui
+            .lista {
+                display: flex;
+                justify-content: space-around;
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    z-index: 1;
+                }
+                //aqui
+                //aqui
+                //aqui
+                .lis {
+                    list-style: none;
+                    position: relative;
+                    width: 100%;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: transform 0.5s ease;
+                    .submenu {
+                        position: absolute;
+                        top: 75px;
+                        width: inherit;
+                        display: none;
+                        height: 50px;
+                        .lis {
+                            height: 50px;
+                            background-color: rgba($color: #111111, $alpha: .4);
+                            //aqui
+                            //aqui
+                            //aqui
+                            @include telefono() {
+                                width: 100%;
+                                margin: 0;
+                                padding: 0;
+                                background-color: rgba($color: #222222, $alpha: 1);
+                            }
+                            //aqui
+                            //aqui
+                            //aqui
+                        }
+                        .lis:hover {
+                            background-color: rgba($color: #111111, $alpha: .8);
+                            //aqui
+                            //aqui
+                            //aqui
+                            @include telefono() {
+                                background-color: rgba($color: #111111, $alpha: 1);
+                            }
+                            //aqui
+                            //aqui
+                            //aqui
+                        }
+                    }
+                    .enlaces {
+                        text-decoration: none;
+                        color: $colorletra;
+                        font-size: 1.5rem;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        transition: transform 0s ease;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                .lis:hover .submenu {
+                    display: block;
+                }
+                .lis:hover {
+                    background-color: rgba($color: #111111, $alpha: .8);
+                    transform: scale(1.1);
+                }
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    display: none;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color: $esse;
+                    .lis:hover {
+                        transform: scale(1);
+                        background-color: rgba($color: #111111, $alpha: 1);
+                    }
+                    #contactos {
+                        position: initial;
+                    }
+                }
+                //aqui
+                //aqui
+                //aqui
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    background-color: rgba($color: #555555, $alpha: .5);
+    h1 {
+        font-family: "Titillium Web";
+        color: #333333;
+        margin-left: 25px;
+    }
+    .dos {
+        background-color: $colorletra;
+        width: 80%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        justify-content: space-around;
+        padding: 25px;
+        @include tablet() {
+            flex-direction: column;
+        }
+        .izz {
+            width: 30%;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            @include portatil() {
+                width: 40%;
+            }
+            @include tablet() {
+                width: 53%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+            @include telefono() {
+                width: 75%;
+            }
+            @include teleM() {
+                width: 82%;
+            }
+            @include telepeque() {
+                width: 90%;
+            }
+            span {
+                font-weight: bold;
+            }
+        }
+        .dess {
+            width: 40%;
+            @include tablet() {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @include telefono() {
+                width: 92%;
+            }
+            h3 {
+                margin-left: 10px;
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            .conr {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                @include teleL() {
+                    flex-direction: column;
+                }
+                .iss {
+                    width: 50%;
+                    @include teleL() {
+                        width: 100%;
+                    }
+                    input {
+                        width: 90%;
+                        @include teleL() {
+                            width: 95%;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+                .dee {
+                    width: 50%;
+                    @include teleL() {
+                        width: 100%;
+                    }
+                    input {
+                        width: 90%;
+                        @include teleL() {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+            input[type=text] {
+                width: 95%;
+            }
+            .envio {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                input[type=submit] {
+                    width: 40%;
+                    height: 40px;
+                    background-color: $botonverde;
+                    border-radius: 10px;
+                    color: $colorletra;
+                }
+            }
+        }
+    }
+}
+
+//fin main
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba($color: $colorpo, $alpha: .9);
+    //aqui
+    //aqui
+    //aqui
+    @include telefono() {
+        height: 20vh;
+    }
+    @include telepeque() {
+        height: min-content;
+    }
+    //aqui
+    //aqui
+    //aqui
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        //aqui
+        //aqui
+        //aqui
+        @include telefono() {
+            flex-direction: column;
+        }
+        @include teleM() {
+            width: 88%;
+        }
+        @include telepeque() {
+            margin-bottom: 15px;
+        }
+        //aqui
+        //aqui
+        //aqui
+        .der {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+            //aqui
+            //aqui
+            //aqui
+            @include telefono() {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            @include telepeque() {
+                flex-direction: column;
+            }
+            //aqui
+            //aqui
+            //aqui
+            .enlaces {
+                text-decoration: none;
+                display: flex;
+                img {
+                    width: 20px;
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        width: auto;
+                        height: 17px;
+                        margin-top: 2px;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                p {
+                    margin-left: 5px;
+                    color: $colorletra;
+                    font-size: 1rem;
+                }
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    width: 50%;
+                    padding-top: 10px;
+                }
+                @include teleM() {
+                    width: 40%;
+                }
+                @include telepeque() {
+                    width: 90%;
+                    margin-left: 30px;
+                }
+                //aqui
+                //aqui
+                //aqui
+            }
+        }
+    }
+    .ultimo {
+        text-align: center;
+        color: $colorletra;
+        background-color: rgba($color: $colorpo, $alpha: .9);
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+}

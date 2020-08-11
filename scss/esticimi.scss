@@ -1,0 +1,772 @@
+@import 'funciones';
+@import 'variables';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fond2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    .plomo {
+        width: 100%;
+        height: 75px;
+        padding: 10px;
+        background-color: rgba($color: #111111, $alpha: .6);
+        display: flex;
+        align-items: center;
+        //aqui
+        //aqui
+        //aqui
+        @include telefono() {
+            flex-direction: column;
+            padding: 0;
+            padding-left: 15px;
+            padding: 0;
+        }
+        //aqui
+        //aqui
+        //aqui
+        .icon {
+            width: 40%;
+            //aqui
+            //aqui
+            //aqui
+            @include tablet() {
+                width: 35%;
+            }
+            @include telefono() {
+                margin-left: 20px;
+                width: 90%;
+                display: flex;
+                justify-content: space-around;
+                .hamburguesa {
+                    width: 18%;
+                    height: 60px;
+                    background-color: $colorpo;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    border: 2px solid $bajoo;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    .barrita {
+                        background-color: $bajoo;
+                        width: 80%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 8px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            //aqui
+            //aqui
+            //aqui
+            .enlaces {
+                transform: skew(160deg);
+                background-color: #000000;
+                width: 70%;
+                height: 75px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                margin-left: -25px;
+                animation: derr 1.3s ease;
+                //aqui
+                //aqui
+                //aqui
+                @include gran() {
+                    width: 30%;
+                }
+                @include computadora() {
+                    width: 90%;
+                }
+                @include telefono() {
+                    width: 75%;
+                    margin-left: -100px;
+                    padding-left: 20px;
+                }
+                @include telepeque() {
+                    width: 93%;
+                    padding-left: 40px;
+                }
+                //aqui
+                //aqui
+                //aqui
+                img {
+                    transform: skew(20deg);
+                    margin-right: 5px;
+                    height: 55px;
+                    margin-left: 25px;
+                }
+                p {
+                    transform: skew(20deg);
+                    color: $colorletra;
+                    font-size: 2rem;
+                }
+            }
+            @keyframes derr {
+                0% {
+                    transform: translateX(-300px);
+                }
+                100% {
+                    transform: translateX(0px);
+                }
+            }
+        }
+        .nave {
+            flex-grow: 2;
+            //aqui
+            //aqui
+            //aqui
+            @include telefono() {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                z-index: 10;
+            }
+            //aqui
+            //aqui
+            //aqui
+            .lista {
+                display: flex;
+                justify-content: space-around;
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    z-index: 1;
+                }
+                //aqui
+                //aqui
+                //aqui
+                .lis {
+                    list-style: none;
+                    position: relative;
+                    width: 100%;
+                    height: 75px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: transform 0.5s ease;
+                    .submenu {
+                        position: absolute;
+                        top: 75px;
+                        width: inherit;
+                        display: none;
+                        height: 50px;
+                        .lis {
+                            height: 50px;
+                            background-color: rgba($color: #111111, $alpha: .4);
+                            //aqui
+                            //aqui
+                            //aqui
+                            @include telefono() {
+                                width: 100%;
+                                margin: 0;
+                                padding: 0;
+                                background-color: rgba($color: #222222, $alpha: 1);
+                            }
+                            //aqui
+                            //aqui
+                            //aqui
+                        }
+                        .lis:hover {
+                            background-color: rgba($color: #111111, $alpha: .8);
+                            //aqui
+                            //aqui
+                            //aqui
+                            @include telefono() {
+                                background-color: rgba($color: #111111, $alpha: 1);
+                            }
+                            //aqui
+                            //aqui
+                            //aqui
+                        }
+                    }
+                    .enlaces {
+                        text-decoration: none;
+                        color: $colorletra;
+                        font-size: 1.5rem;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        transition: transform 0s ease;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                .lis:hover .submenu {
+                    display: block;
+                }
+                .lis:hover {
+                    background-color: rgba($color: #111111, $alpha: .8);
+                    transform: scale(1.1);
+                }
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    display: none;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color: $esse;
+                    .lis:hover {
+                        transform: scale(1);
+                        background-color: rgba($color: #111111, $alpha: 1);
+                    }
+                    #contactos {
+                        position: initial;
+                    }
+                }
+                //aqui
+                //aqui
+                //aqui
+            }
+        }
+    }
+    .letrash {
+        width: 100%;
+        height: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            color: $colorpo;
+            font-size: 3.5rem;
+            margin-bottom: 5px;
+            animation: anim 2s ease;
+        }
+        p {
+            color: $colorpo;
+            animation: anim2 4s ease;
+            font-size: 1.5rem;
+        }
+        @keyframes anim {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes anim2 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//fin header
+//fin header
+.mimain {
+    width: 100%;
+    background-color: #000000;
+    .fondo {
+        background-image: url(../img/npa.jpg);
+        background-position: bottom;
+        background-size: cover;
+        .container {
+            width: 80%;
+            background-color: #03071e;
+            margin-left: auto;
+            margin-right: auto;
+            .ofertas {
+                background-image: url(../img/ladrillosss.webp);
+                h2 {
+                    text-align: center;
+                    padding: 25px;
+                    font-size: 1.7rem;
+                    color: $colorletra;
+                }
+                .materiales {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    .carta {
+                        background-color: $fondocarta;
+                        border-radius: 5px;
+                        padding: 10px 25px;
+                        width: 29%;
+                        height: min-content;
+                        position: relative;
+                        //aqui
+                        //aqui
+                        //aqui
+                        @include tablet() {
+                            width: 30%;
+                            margin-bottom: 15px;
+                        }
+                        @include telefono() {
+                            width: 65%;
+                            margin-bottom: 35px;
+                        }
+                        @include teleM() {
+                            width: 75%;
+                        }
+                        //aqui
+                        //aqui
+                        //aqui
+                        .ofer {
+                            position: absolute;
+                            width: 40%;
+                            height: 0px;
+                            border-right: 20px solid transparent;
+                            border-left: 20px solid transparent;
+                            border-bottom: 20px solid #ff0000;
+                            top: 7%;
+                            right: -9%;
+                            transform: rotate(45deg);
+                            //aqui
+                            //aqui
+                            //aqui
+                            @include gran() {
+                                width: 50%;
+                                top: 15%;
+                                right: -10%;
+                            }
+                            @include portatil() {
+                                width: 65%;
+                                top: 10%;
+                                right: -14%;
+                            }
+                            @include computadora() {
+                                width: 60%;
+                                top: 8%;
+                            }
+                            @include tablet() {
+                                width: 52%;
+                                top: 6%;
+                                right: -11%;
+                            }
+                            @include telefono() {
+                                width: 45%;
+                                top: 8%;
+                                right: -9%;
+                            }
+                            @include teleL() {
+                                width: 48%;
+                                top: 7%;
+                                right: -10%;
+                            }
+                            //aqui
+                            //aqui
+                            //aqui
+                            p {
+                                text-align: center;
+                                color: $colorletra;
+                            }
+                        }
+                        input[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            margin-bottom: 20px;
+                        }
+                        label {
+                            img {
+                                width: 100%;
+                                height: 200px;
+                                margin-bottom: 15px;
+                                //aqui
+                                //aqui
+                                //aqui
+                                @include gran() {
+                                    height: 400px;
+                                }
+                                @include telepeque() {
+                                    height: 160px;
+                                }
+                                //aqui
+                                //aqui
+                                //aqui
+                            }
+                        }
+                        span {
+                            color: $colorletra;
+                            font-size: 1.4rem;
+                            display: block;
+                            text-align: center;
+                            font-family: $fuentesecundaria;
+                            margin-bottom: 10px;
+                        }
+                        .compa {
+                            .tit {
+                                width: 100%;
+                                display: flex;
+                                h5 {
+                                    width: 50%;
+                                    text-align: center;
+                                    font-size: 1.3rem;
+                                    color: $elantes;
+                                }
+                                .ahora {
+                                    color: $elahora;
+                                    font-family: sans-serif;
+                                    font-size: 1.2rem;
+                                    text-transform: capitalize;
+                                }
+                            }
+                            .precio {
+                                width: 100%;
+                                display: flex;
+                                p {
+                                    width: 50%;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    font-family: $fuentesecundaria;
+                                    font-size: 1.3rem;
+                                }
+                                .antes {
+                                    text-decoration: line-through;
+                                    color: $antetacha;
+                                }
+                                .preahora {
+                                    color: $camari;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button {
+                    background-color: $botonrojo;
+                    color: $colorletra;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    font-family: $fuentesecundaria;
+                    width: 25%;
+                    padding: 10px 0;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    font-size: 1.4rem;
+                    border: 1px solid #000000;
+                }
+                //aqui
+                //aqui
+                //aqui
+                @include tablet() {
+                    .compra {
+                        margin-top: -25px;
+                    }
+                }
+                @include telefono() {
+                    .compra {
+                        margin-top: -38px;
+                        width: 70%;
+                    }
+                }
+                //aqui
+                //aqui
+                //aqui
+                padding-bottom: 12px;
+                margin-bottom: 24px;
+            }
+            //cierre ofertas
+            .lodemas {
+                border: 4px dashed #000000;
+                border-radius: 30px;
+                //  background-image: url(../img/neg.jpg);
+                background-color: #6a040f;
+                background: rgb(2, 0, 36);
+                background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(106, 4, 15, 1) 57%, rgba(255, 33, 86, 1) 96%);
+                h2 {
+                    padding: 12px 0px;
+                    text-align: center;
+                    color: $colorletra;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include teleL() {
+                        width: 90%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                .materiales {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                    .carta {
+                        background-color: $fondocarta;
+                        border-radius: 5px;
+                        padding: 10px 25px;
+                        width: 29%;
+                        height: min-content;
+                        position: relative;
+                        //aqui
+                        //aqui
+                        //aqui
+                        @include gran() {
+                            width: 23%;
+                        }
+                        @include portatil() {
+                            width: 35%;
+                        }
+                        @include telefono() {
+                            width: 76%;
+                            margin-bottom: 25px;
+                        }
+                        //aqui
+                        //aqui
+                        //aqui
+                        input[type="checkbox"] {
+                            width: 20px;
+                            height: 20px;
+                            margin-bottom: 20px;
+                        }
+                        label {
+                            img {
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: auto;
+                                height: 200px;
+                                margin-bottom: 15px;
+                                //aqui
+                                //aqui
+                                //aqui
+                                @include gran() {
+                                    height: 300px;
+                                }
+                                @include portatil() {
+                                    height: 170px;
+                                }
+                                @include tablet() {
+                                    height: 178px;
+                                    width: 88%;
+                                }
+                                @include telefono() {
+                                    height: auto;
+                                }
+                                //aqui
+                                //aqui
+                                //aqui
+                            }
+                        }
+                        span {
+                            color: $colorletra;
+                            font-size: 1.4rem;
+                            display: block;
+                            text-align: center;
+                            font-family: $fuentesecundaria;
+                            margin-bottom: 10px;
+                        }
+                        .compa {
+                            .tit {
+                                width: 100%;
+                                display: flex;
+                                h5 {
+                                    width: 50%;
+                                    text-align: center;
+                                    font-size: 1.3rem;
+                                    color: #111111;
+                                }
+                                .ahora,
+                                .labelprecio {
+                                    color: $elahora;
+                                    font-weight: bold;
+                                    font-size: 1.3rem;
+                                }
+                            }
+                            .precio {
+                                width: 100%;
+                                display: flex;
+                                p {
+                                    width: 50%;
+                                    text-align: center;
+                                    font-weight: bold;
+                                    font-family: $fuentesecundaria;
+                                    font-size: 1.3rem;
+                                }
+                                .preahora {
+                                    color: $camari;
+                                }
+                            }
+                        }
+                    }
+                }
+                //CIERRE MATERIALES
+                .button {
+                    background-color: $botonverde;
+                    color: $colorletra;
+                    font-weight: bold;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    font-family: $fuentesecundaria;
+                    width: 25%;
+                    padding: 10px 0;
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    font-size: 1.4rem;
+                    border: 1px solid #000000;
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        width: 65%;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                padding-bottom: 20px;
+            }
+            //fin todas las tarjetas :v
+            //aqui
+            //aqui
+            @include tablet() {
+                width: 100%;
+            }
+            //aqui
+            //aqui
+            //aqui
+        }
+    }
+}
+
+//fin main
+footer {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba($color: $colorpo, $alpha: .9);
+    //aqui
+    //aqui
+    //aqui
+    @include telefono() {
+        height: 20vh;
+    }
+    @include telepeque() {
+        height: min-content;
+    }
+    //aqui
+    //aqui
+    //aqui
+    .container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        //aqui
+        //aqui
+        //aqui
+        @include telefono() {
+            flex-direction: column;
+        }
+        @include teleM() {
+            width: 88%;
+        }
+        @include telepeque() {
+            margin-bottom: 15px;
+        }
+        //aqui
+        //aqui
+        //aqui
+        .der {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+            //aqui
+            //aqui
+            //aqui
+            @include telefono() {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            @include telepeque() {
+                flex-direction: column;
+            }
+            //aqui
+            //aqui
+            //aqui
+            .enlaces {
+                text-decoration: none;
+                display: flex;
+                img {
+                    width: 20px;
+                    //aqui
+                    //aqui
+                    //aqui
+                    @include telefono() {
+                        width: auto;
+                        height: 17px;
+                        margin-top: 2px;
+                    }
+                    //aqui
+                    //aqui
+                    //aqui
+                    //aqui
+                }
+                p {
+                    margin-left: 5px;
+                    color: $colorletra;
+                    font-size: 1rem;
+                }
+                //aqui
+                //aqui
+                //aqui
+                @include telefono() {
+                    width: 50%;
+                    padding-top: 10px;
+                }
+                @include teleM() {
+                    width: 40%;
+                }
+                @include telepeque() {
+                    width: 90%;
+                    margin-left: 30px;
+                }
+                //aqui
+                //aqui
+                //aqui
+            }
+        }
+    }
+    .ultimo {
+        text-align: center;
+        color: $colorletra;
+        background-color: rgba($color: $colorpo, $alpha: .9);
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página web diseñada para la compra de materiales de contrucción en La Paz - Bolivia">
+    <meta name="keywords" content="Compras,materiales,Bolivia,online">
+    <meta name="autor" content="Sarai Blanco Salgado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.svg">
+    <title>Mamposteria</title>
+    <link rel="stylesheet" href="../css/estimampos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="plomo">
+            <div class="icon">
+                <a href="../index.html" class="enlaces">
+                    <img src="../img/iconob.png" alt="icono blanco">
+                    <p>Construye</p>
+                </a>
+                <div class="hamburguesa" onclick="desa()">
+                    <div class="barrita"></div>
+                    <div class="barrita"></div>
+                    <div class="barrita"></div>
+                </div>
+            </div>
+            <nav class="nave">
+                <ul class="lista" id="milista">
+                    <li class="lis">
+                        <a href="../index.html" class="enlaces">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="lis">
+                        <a href="#" class="enlaces" id="lisss">
+                            Tienda
+                        </a>
+                        <ul class="lista submenu">
+                            <li class="lis">
+                                <a href="todos.html" class="enlaces">
+                                    Todos
+                               </a>
+                            </li>
+                            <li class="lis">
+                                <a href="cimientos.html" class="enlaces">
+                                     Cimientos 
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="Capa.html" class="enlaces">
+                                     Capa aisladora
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="#" class="enlaces">
+                                     Mampostería
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="reves.html" class="enlaces">
+                                     Revestimientos
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="pisos.html" class="enlaces">
+                                     Pisos
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="techo.html" class="enlaces">
+                                     Techos
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="lis" id="contactos">
+                        <a href="contactos.html" class="enlaces">
+                            Contáctanos
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!--fin barrita ploma de nav-->
+        <div class="letrash">
+            <h1>
+                ¡Paredes!
+            </h1>
+            <p>En esta página web encontrarás varios materiales que se utilizan en la construcción de paredes</p>
+        </div>
+    </header>
+    <main class="mimain">
+        <div class="fondo">
+            <div class="container">
+                <div class="ofertas">
+                    <h2>Ofertas de la semana!!</h2>
+                    <div class="materiales">
+                        <div class="carta">
+                            <input type="checkbox" id="ceme">
+                            <div class="ofer">
+                                <p>-29%</p>
+                            </div>
+                            <label for="ceme"><img src="../img/cem.png" alt="cemento"></label>
+                            <span> Cemento (blsa) </span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5>Antes</h5>
+                                    <h5 class="ahora">AHORA</h5>
+                                </div>
+                                <div class="precio">
+                                    <p class="antes">
+                                        Bs. 50.00
+                                    </p>
+                                    <p class="preahora">
+                                        Bs. 35.50
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carta">
+                            <input type="checkbox" id="arena">
+                            <div class="ofer">
+                                <p>-20%</p>
+                            </div>
+                            <label for="arena"><img src="../img/arena.jpg" alt="arena mediana"></label>
+                            <span> Arena Mediana (m3)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5>Antes</h5>
+                                    <h5 class="ahora">AHORA</h5>
+                                </div>
+                                <div class="precio">
+                                    <p class="antes">
+                                        Bs. 120.00
+                                    </p>
+                                    <p class="preahora">
+                                        Bs. 96
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carta">
+                            <input type="checkbox" id="pied">
+                            <div class="ofer">
+                                <p>-20%</p>
+                            </div>
+                            <label for="pied"><img src="../img/piedra.jpg" alt="piedra partida para hormigon"></label>
+                            <span> Piedra partida para hormigón (m3)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5>Antes</h5>
+                                    <h5 class="ahora">AHORA</h5>
+                                </div>
+                                <div class="precio">
+                                    <p class="antes">
+                                        Bs. 120.00
+                                    </p>
+                                    <p class="preahora">
+                                        Bs. 96
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button compra">
+                        ¡COMPRA YA!
+                    </button>
+                </div>
+                <!--cierre ofertas-->
+
+
+
+                <div class="lodemas">
+
+                    <h2>Elige los materiales a comprar</h2>
+                    <div class="materiales">
+                        <div class="carta">
+                            <input type="checkbox" id="ceme2">
+                            <label for="ceme2"><img src="../img/cem.png" alt="cemento"></label>
+                            <span> Cemento (blsa) </span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="preceme" class="labelprecio"> Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 35.50
+                                    </p>
+
+                                    <input type="number" id="preceme" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carta">
+                            <input type="checkbox" id="arena2">
+                            <label for="arena2"><img src="../img/arena.jpg" alt="arena"></label>
+                            <span> Arena Mediana (m3)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="arenas" class="labelprecio">Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 96
+                                    </p>
+                                    <input type="number" id="arenas" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin carta1-->
+                    <div class="materiales">
+                        <div class="carta">
+                            <input type="checkbox" id="pied2">
+                            <label for="pied2"><img src="../img/cal.png" alt="cal"></label>
+                            <span> Cal Hidráulica (kg)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="prec" class="labelprecio"> Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 0.90
+                                    </p>
+
+                                    <input type="number" id="prec" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carta">
+                            <input type="checkbox" id="che1">
+                            <label for="che1"><img src="../img/hierro.jpg" alt="hierro"></label>
+                            <span> Barra de Hierro Torsionado (12m)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="prec2" class="labelprecio">Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 34
+                                    </p>
+                                    <input type="number" id="prec2" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="materiales">
+                        <div class="carta">
+                            <input type="checkbox" id="che2">
+                            <label for="che2"><img src="../img/lad1.jpg" alt="lad1"></label>
+                            <span> Ladrillo adobito (pza) </span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="prec3" class="labelprecio"> Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 0.65
+                                    </p>
+                                    <input type="number" id="prec3" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carta">
+                            <input type="checkbox" id="che3">
+                            <label for="che3"><img src="../img/lad2.jpg" alt="lad2"></label>
+                            <span> Ladrillo refractario (m2)</span>
+                            <div class="compa">
+                                <div class="tit">
+                                    <h5 class="ahora">Precio</h5>
+                                    <label for="prec4" class="labelprecio">Cantidad</label>
+                                </div>
+                                <div class="precio">
+                                    <p class="preahora">
+                                        Bs. 120
+                                    </p>
+                                    <input type="number" id="prec4" min="0" max="1000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button compra">
+                        COMPRAR
+                    </button>
+
+                </div>
+            </div>
+            <!--fin fondo-->
+    </main>
+    <!--fin main-->
+    <footer>
+        <div class="container">
+            <div class="der">
+                <a href="#" class="enlaces">
+                    <img src="../img/pin (1).png" alt="localitation">
+                    <p>La Paz, Bolivia</p>
+                </a>
+                <a href="#" class="enlaces">
+                    <img src="../img/email.png" alt="email">
+                    <p>construye123@gmail.com</p>
+                </a>
+            </div>
+            <div class="der">
+                <a href="#" class="enlaces">
+                    <img src="../img/phone.png" alt="telefono">
+                    <p>+591 76543210</p>
+                </a>
+                <a href="#" class="enlaces">
+                    <img src="../img/clock.png" alt="reloj">
+                    <p>Lun-Sab 09:00-18:00</p>
+                </a>
+            </div>
+            <div class="der">
+                <a href="https://www.facebook.com/" target="_blank" class="enlaces">
+                    <img src="../img/facebook.png" alt="face">
+                    <p>Facebook</p>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="enlaces">
+                    <img src="../img/youtube.png" alt="youtube">
+                    <p>Youtube</p>
+                </a>
+            </div>
+        </div>
+        <p class="ultimo">Todos los derechos reservados - Construye 2020</p>
+    </footer>
+
+    <script language="javascript" type="text/javascript">
+        function desa() {
+            var x = document.getElementById("milista");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

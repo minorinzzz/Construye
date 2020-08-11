@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página web diseñada para la compra de materiales de contrucción en La Paz - Bolivia">
+    <meta name="keywords" content="Compras,materiales,Bolivia,online">
+    <meta name="autor" content="Sarai Blanco Salgado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.svg">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../css/contactos.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="plomo">
+            <div class="icon">
+                <a href="../index.html" class="enlaces">
+                    <img src="../img/iconob.png" alt="icono blanco">
+                    <p>Construye</p>
+                </a>
+                <div class="hamburguesa" onclick="desa()">
+                    <div class="barrita"></div>
+                    <div class="barrita"></div>
+                    <div class="barrita"></div>
+                </div>
+            </div>
+            <nav class="nave">
+                <ul class="lista" id="milista">
+                    <li class="lis">
+                        <a href="../index.html" class="enlaces">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="lis">
+                        <a href="#" class="enlaces" id="lisss">
+                            Tienda
+                        </a>
+                        <ul class="lista submenu">
+                            <li class="lis">
+                                <a href="todos.html" class="enlaces">
+                                    Todos
+                               </a>
+                            </li>
+                            <li class="lis">
+                                <a href="cimientos.html" class="enlaces">
+                                     Cimientos 
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="Capa.html" class="enlaces">
+                                     Capa aisladora
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="mamposteria.html" class="enlaces">
+                                     Mampostería
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="reves.html" class="enlaces">
+                                     Revestimientos
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="pisos.html" class="enlaces">
+                                     Pisos
+                                </a>
+                            </li>
+                            <li class="lis">
+                                <a href="techo.html" class="enlaces">
+                                     Techos
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="lis" id="contactos">
+                        <a href="#" class="enlaces">
+                            Contáctanos
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+        <!--fin barrita ploma de nav-->
+
+    </header>
+    <!--fin HEADER-->
+    <main class="mimain">
+        <h1>Contáctanos</h1>
+        <div class="dos">
+            <div class="izz">
+                <h3> Datos a los que puedes acudir</h3>
+                <br>
+                <p>Email: construye123@gmail.com</p>
+                <p>Tel: +591 76543210</p>
+                <br>
+                <span>Horarios de atención</span>
+                <p>Lun - Sab 09:00 - 18:00</p>
+            </div>
+            <div class="dess">
+                <h3> Deja un mensaje</h3>
+                <br>
+                <form action="#">
+                    <div class="conr">
+                        <div class="iss">
+                            <label for="name">Tu nombre</label>
+                            <br>
+                            <input type="text" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="dee">
+                            <label for="email"> Email</label>
+                            <br>
+                            <input type="email" id="email" placeholder="Tu dirección de email">
+                        </div>
+                    </div>
+                    <br>
+                    <label for="asunto">Asunto</label>
+                    <br>
+                    <input type="text" id="asunto" placeholder="Asunto">
+                    <br><br>
+                    <label for="Mensaje">Mensaje</label>
+                    <br>
+                    <input type="text" id="Mensaje" placeholder="Mensaje">
+                    <br><br>
+                    <div class="envio">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <!--fin main-->
+
+    <footer>
+        <div class="container">
+            <div class="der">
+                <a href="#" class="enlaces">
+                    <img src="../img/pin (1).png" alt="localitation">
+                    <p>La Paz, Bolivia</p>
+                </a>
+                <a href="#" class="enlaces">
+                    <img src="../img/email.png" alt="email">
+                    <p>construye123@gmail.com</p>
+                </a>
+            </div>
+            <div class="der">
+                <a href="#" class="enlaces">
+                    <img src="../img/phone.png" alt="telefono">
+                    <p>+591 76543210</p>
+                </a>
+                <a href="#" class="enlaces">
+                    <img src="../img/clock.png" alt="reloj">
+                    <p>Lun-Sab 09:00-18:00</p>
+                </a>
+            </div>
+            <div class="der">
+                <a href="https://www.facebook.com/" target="_blank" class="enlaces">
+                    <img src="../img/facebook.png" alt="face">
+                    <p>Facebook</p>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="enlaces">
+                    <img src="../img/youtube.png" alt="youtube">
+                    <p>Youtube</p>
+                </a>
+            </div>
+        </div>
+        <p class="ultimo">Todos los derechos reservados - Construye 2020</p>
+    </footer>
+    <script language="javascript" type="text/javascript">
+        function desa() {
+            var x = document.getElementById("milista");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

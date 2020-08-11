@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 75px;
+  background-color: #49111c;
+}
+.header .plomo {
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  background-color: rgba(17, 17, 17, 0.6);
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .header .plomo {
+    flex-direction: column;
+    padding: 0;
+    padding-left: 15px;
+    padding: 0;
+  }
+}
+.header .plomo .icon {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .header .plomo .icon {
+    width: 35%;
+  }
+}
+@media (max-width: 480px) {
+  .header .plomo .icon {
+    margin-left: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .header .plomo .icon .hamburguesa {
+    width: 18%;
+    height: 60px;
+    background-color: #232323;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 2px solid #e0dcdc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .header .plomo .icon .hamburguesa .barrita {
+    background-color: #e0dcdc;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8px;
+    border-radius: 4px;
+  }
+}
+.header .plomo .icon .enlaces {
+  transform: skew(160deg);
+  background-color: #000000;
+  width: 70%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: -25px;
+  animation: derr 1.3s ease;
+}
+@media (min-width: 2560px) {
+  .header .plomo .icon .enlaces {
+    width: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .header .plomo .icon .enlaces {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .header .plomo .icon .enlaces {
+    width: 75%;
+    margin-left: -100px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .header .plomo .icon .enlaces {
+    width: 93%;
+    padding-left: 40px;
+  }
+}
+.header .plomo .icon .enlaces img {
+  transform: skew(20deg);
+  margin-right: 5px;
+  height: 55px;
+  margin-left: 25px;
+}
+.header .plomo .icon .enlaces p {
+  transform: skew(20deg);
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+@keyframes derr {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.header .plomo .nave {
+  flex-grow: 2;
+}
+@media (max-width: 480px) {
+  .header .plomo .nave {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+}
+.header .plomo .nave .lista {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 480px) {
+  .header .plomo .nave .lista {
+    z-index: 1;
+  }
+}
+.header .plomo .nave .lista .lis {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+.header .plomo .nave .lista .lis .submenu {
+  position: absolute;
+  top: 75px;
+  width: inherit;
+  display: none;
+  height: 50px;
+}
+.header .plomo .nave .lista .lis .submenu .lis {
+  height: 50px;
+  background-color: rgba(17, 17, 17, 0.4);
+}
+@media (max-width: 480px) {
+  .header .plomo .nave .lista .lis .submenu .lis {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+  }
+}
+.header .plomo .nave .lista .lis .submenu .lis:hover {
+  background-color: rgba(17, 17, 17, 0.8);
+}
+@media (max-width: 480px) {
+  .header .plomo .nave .lista .lis .submenu .lis:hover {
+    background-color: #111111;
+  }
+}
+.header .plomo .nave .lista .lis .enlaces {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  .header .plomo .nave .lista .lis {
+    transition: transform 0s ease;
+  }
+}
+.header .plomo .nave .lista .lis:hover .submenu {
+  display: block;
+}
+.header .plomo .nave .lista .lis:hover {
+  background-color: rgba(17, 17, 17, 0.8);
+  transform: scale(1.1);
+}
+@media (max-width: 480px) {
+  .header .plomo .nave .lista {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #666666;
+  }
+  .header .plomo .nave .lista .lis:hover {
+    transform: scale(1);
+    background-color: #111111;
+  }
+  .header .plomo .nave .lista #contactos {
+    position: initial;
+  }
+}
+
+main {
+  width: 100%;
+  background-color: rgba(85, 85, 85, 0.5);
+}
+main h1 {
+  font-family: "Titillium Web";
+  color: #333333;
+  margin-left: 25px;
+}
+main .dos {
+  background-color: #FFFFFF;
+  width: 80%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: space-around;
+  padding: 25px;
+}
+@media (max-width: 768px) {
+  main .dos {
+    flex-direction: column;
+  }
+}
+main .dos .izz {
+  width: 30%;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+@media (max-width: 1024px) {
+  main .dos .izz {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  main .dos .izz {
+    width: 53%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  main .dos .izz {
+    width: 75%;
+  }
+}
+@media (max-width: 375px) {
+  main .dos .izz {
+    width: 82%;
+  }
+}
+@media (max-width: 320px) {
+  main .dos .izz {
+    width: 90%;
+  }
+}
+main .dos .izz span {
+  font-weight: bold;
+}
+main .dos .dess {
+  width: 40%;
+}
+@media (max-width: 768px) {
+  main .dos .dess {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+  main .dos .dess {
+    width: 92%;
+  }
+}
+main .dos .dess h3 {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+main .dos .dess .conr {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 425px) {
+  main .dos .dess .conr {
+    flex-direction: column;
+  }
+}
+main .dos .dess .conr .iss {
+  width: 50%;
+}
+@media (max-width: 425px) {
+  main .dos .dess .conr .iss {
+    width: 100%;
+  }
+}
+main .dos .dess .conr .iss input {
+  width: 90%;
+}
+@media (max-width: 425px) {
+  main .dos .dess .conr .iss input {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+}
+main .dos .dess .conr .dee {
+  width: 50%;
+}
+@media (max-width: 425px) {
+  main .dos .dess .conr .dee {
+    width: 100%;
+  }
+}
+main .dos .dess .conr .dee input {
+  width: 90%;
+}
+@media (max-width: 425px) {
+  main .dos .dess .conr .dee input {
+    width: 95%;
+  }
+}
+main .dos .dess input[type=text] {
+  width: 95%;
+}
+main .dos .dess .envio {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .dos .dess .envio input[type=submit] {
+  width: 40%;
+  height: 40px;
+  background-color: #232923;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+@media (max-width: 480px) {
+  footer {
+    height: 20vh;
+  }
+}
+@media (max-width: 320px) {
+  footer {
+    height: min-content;
+  }
+}
+footer .container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  footer .container {
+    width: 88%;
+  }
+}
+@media (max-width: 320px) {
+  footer .container {
+    margin-bottom: 15px;
+  }
+}
+footer .container .der {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+@media (max-width: 480px) {
+  footer .container .der {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 320px) {
+  footer .container .der {
+    flex-direction: column;
+  }
+}
+footer .container .der .enlaces {
+  text-decoration: none;
+  display: flex;
+}
+footer .container .der .enlaces img {
+  width: 20px;
+}
+@media (max-width: 480px) {
+  footer .container .der .enlaces img {
+    width: auto;
+    height: 17px;
+    margin-top: 2px;
+  }
+}
+footer .container .der .enlaces p {
+  margin-left: 5px;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+@media (max-width: 480px) {
+  footer .container .der .enlaces {
+    width: 50%;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 375px) {
+  footer .container .der .enlaces {
+    width: 40%;
+  }
+}
+@media (max-width: 320px) {
+  footer .container .der .enlaces {
+    width: 90%;
+    margin-left: 30px;
+  }
+}
+footer .ultimo {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(35, 35, 35, 0.9);
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=contactos.css.map */

@@ -1,0 +1,47 @@
+@mixin computadora() {
+    @media (max-width:#{$computadora}) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width:#{$tablet}) {
+        @content;
+    }
+}
+
+@mixin telefono() {
+    @media (max-width:#{$telefono}) {
+        @content;
+    }
+}
+
+@mixin telepeque() {
+    @media (max-width:#{$telepeque}) {
+        @content;
+    }
+}
+
+@mixin teleM() {
+    @media (max-width:#{$teleM}) {
+        @content;
+    }
+}
+
+@mixin teleL() {
+    @media (max-width:#{$teleL}) {
+        @content;
+    }
+}
+
+@mixin portatil() {
+    @media (max-width:#{$portatil}) {
+        @content;
+    }
+}
+
+@mixin gran() {
+    @media (min-width:#{$pantallagran}) {
+        @content;
+    }
+}
